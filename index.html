@@ -15,84 +15,85 @@
 </head>
 <body>
  
-  <main class="dashboard">
-    <header class="profile">
-      <img src="./images/image-jeremy.png" alt="Jeremy Robson" class="profile__picture"/>
-      <p class="profile__introduction">Report for</p>
-      <h1 class="profile__name">Jeremy Robson</h1>
-      <nav class="profile__nav">
-        <button class="profile__timeframe" type="button" data-period="daily">Daily</button>
-        <button class="profile__timeframe" type="button" data-period="weekly">Weekly</button>
-        <button class="profile__timeframe" type="button" data-period="monthly">Monthly</button>
+  <main class="l-dashboard">
+
+    <header class="c-profile">
+      <img src="./images/image-jeremy.png" alt="Jeremy Robson" class="c-profile__picture"/>
+      <p class="c-profile__introduction">Report for</p>
+      <h1 class="c-profile__name">Jeremy Robson</h1>
+      <nav class="c-profile__nav">
+        <button class="c-profile__timeframe" type="button" data-period="daily">Daily</button>
+        <button class="c-profile__timeframe" type="button" data-period="weekly">Weekly</button>
+        <button class="c-profile__timeframe" type="button" data-period="monthly">Monthly</button>
       </nav>
     </header>
 
-    <section class="dashboard__cards">
+    <section class="l-dashboard__cards">
 
-      <article class="card card--work">
-        <header class="card__header">
-          <h2 class="card__title">Work</h2>
-          <button type="button" aria-label="More Options" class="card__options">
+      <article class="c-card c-card--work">
+        <header class="c-card__header">
+          <h2 class="c-card__title">Work</h2>
+          <button type="button" aria-label="More Options" class="c-card__options">
             <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
           </button> 
         </header>
-        <p class="card__time">32hrs <!-- weekly --></p>
-        <p class="card__previous-time">Previous - 36hrs <!-- weekly --></p>
+        <p class="c-card__time">32hrs <!-- weekly --></p>
+        <p class="c-card__previous-time">Previous - 36hrs <!-- weekly --></p>
       </article>
       
-      <article class="card card--play">
-        <header class="card__header">
-          <h2 class="card__title">Play</h2>
-          <button type="button" aria-label="More Options" class="card__options">
+      <article class="c-card c-card--play">
+        <header class="c-card__header">
+          <h2 class="c-card__title">Play</h2>
+          <button type="button" aria-label="More Options" class="c-card__options">
             <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
           </button>
         </header>
-        <p class="card__time">10hrs <!-- weekly --></p>
-        <p class="card__previous-time">Previous - 8hrs <!-- weekly --></p>
+        <p class="c-card__time js-current-time">10hrs <!-- weekly --></p>
+        <p class="c-card__previous-time js-previous-time">Previous - 8hrs <!-- weekly --></p>
       </article>
       
-      <article class="card card--study">
-        <header class="card__header">
-          <h2 class="card__title">Study</h2>
-          <button type="button" aria-label="More Options" class="card__options">
+      <article class="c-card c-card--study">
+        <header class="c-card__header">
+          <h2 class="c-card__title">Study</h2>
+          <button type="button" aria-label="More Options" class="c-card__options">
             <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
           </button>
         </header>
-        <p class="card__time">4hrs <!-- weekly --></p>
-        <p class="card__previous-time">Previous - 7hrs <!-- weekly --></p>
+        <p class="c-card__time js-current-time">4hrs <!-- weekly --></p>
+        <p class="c-card__previous-time js-previous-time">Previous - 7hrs <!-- weekly --></p>
       </article>
       
-      <article class="card card--exercise">
-        <header class="card__header">
-          <h2 class="card__title">Exercise</h2>
-          <button type="button" aria-label="More Options" class="card__options">
+      <article class="c-card c-card--exercise">
+        <header class="c-card__header">
+          <h2 class="c-card__title">Exercise</h2>
+          <button type="button" aria-label="More Options" class="c-card__options">
             <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
           </button>
         </header>
-        <p class="card__time">4hrs <!-- weekly --></p>
-        <p class="card__previous-time">Previous - 5hrs <!-- weekly --></p>
+        <p class="c-card__time js-current-time">4hrs <!-- weekly --></p>
+        <p class="c-card__previous-time js-previous-time">Previous - 5hrs <!-- weekly --></p>
       </article>
       
-      <article class="card card--social">
-        <header class="card__header">
+      <article class="c-card c-card--social">
+        <header class="c-card__header">
           <h2 class="card__title">Social</h2>
-          <button type="button" aria-label="More Options" class="card__options">
+          <button type="button" aria-label="More Options" class="c-card__options">
             <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
           </button>
         </header>
-        <p class="card__time">5hrs <!-- weekly --></p>
-        <p class="card__previous-time">Previous - 10hrs <!-- weekly --></p>
+        <p class="c-card__time js-current-time">5hrs <!-- weekly --></p>
+        <p class="c-card__previous-time js-previous-time">Previous - 10hrs <!-- weekly --></p>
       </article>
       
-      <article class="card card--self-care">
-        <header class="card__header">
-          <h2 class="card__title">Self Care</h2>
-          <button type="button" aria-label="More Options" class="card__options">
+      <article class="c-card c-card--self-care">
+        <header class="c-card__header">
+          <h2 class="c-card__title">Self Care</h2>
+          <button type="button" aria-label="More Options" class="c-card__options">
             <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
           </button>
         </header>
-        <p class="card__time">2hrs <!-- weekly --></p>
-        <p class="card__previous-time">Previous - 2hrs <!-- weekly --></p>
+        <p class="c-card__time js-current-time">2hrs <!-- weekly --></p>
+        <p class="c-card__previous-time js-previous-time">Previous - 2hrs <!-- weekly --></p>
       </article>
     </section>
   </main>
