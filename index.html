@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -16,80 +15,80 @@
 </head>
 <body>
  
-  <main>
-    <header>
-      <img src="./images/image-jeremy.png" alt="Jeremy Robson"/>
-      <p>Report for</p>
-      <h1>Jeremy Robson</h1>
-      <nav>
-        <button type="button">Daily</button>
-        <button type="button">Weekly</button>
-        <button type="button">Monthly</button>
+  <main class="dashboard">
+    <header class="profile">
+      <img src="./images/image-jeremy.png" alt="Jeremy Robson" class="profile__picture"/>
+      <p class="profile__introduction">Report for</p>
+      <h1 class="profile__name">Jeremy Robson</h1>
+      <nav class="profile__nav">
+        <button class="profile__timeframe" type="button" data-period="daily">Daily</button>
+        <button class="profile__timeframe" type="button" data-period="weekly">Weekly</button>
+        <button class="profile__timeframe" type="button" data-period="monthly">Monthly</button>
       </nav>
     </header>
 
-    <section>
+    <section class="dashboard__cards">
 
-      <article>
-        <header>
-          <h2>Work</h2>
-          <button type="button" aria-label="More Options">
-            <img src="./images/icon-ellipsis.svg" alt="">
-          </button>
+      <article class="card card--work">
+        <header class="card__header">
+          <h2 class="card__title">Work</h2>
+          <button type="button" aria-label="More Options" class="card__options">
+            <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
+          </button> 
         </header>
         <p class="card__time">32hrs <!-- weekly --></p>
         <p class="card__previous-time">Previous - 36hrs <!-- weekly --></p>
       </article>
       
-      <article>
-        <header>
-          <h2>Play</h2>
-          <button type="button" aria-label="More Options">
-            <img src="./images/icon-ellipsis.svg" alt="">
+      <article class="card card--play">
+        <header class="card__header">
+          <h2 class="card__title">Play</h2>
+          <button type="button" aria-label="More Options" class="card__options">
+            <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
           </button>
         </header>
         <p class="card__time">10hrs <!-- weekly --></p>
         <p class="card__previous-time">Previous - 8hrs <!-- weekly --></p>
       </article>
       
-      <article>
-        <header>
-          <h2>Study</h2>
-          <button type="button" aria-label="More Options">
-            <img src="./images/icon-ellipsis.svg" alt="">
+      <article class="card card--study">
+        <header class="card__header">
+          <h2 class="card__title">Study</h2>
+          <button type="button" aria-label="More Options" class="card__options">
+            <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
           </button>
         </header>
         <p class="card__time">4hrs <!-- weekly --></p>
         <p class="card__previous-time">Previous - 7hrs <!-- weekly --></p>
       </article>
       
-      <article>
-        <header>
-          <h2>Exercise</h2>
-          <button type="button" aria-label="More Options">
-            <img src="./images/icon-ellipsis.svg" alt="">
+      <article class="card card--exercise">
+        <header class="card__header">
+          <h2 class="card__title">Exercise</h2>
+          <button type="button" aria-label="More Options" class="card__options">
+            <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
           </button>
         </header>
         <p class="card__time">4hrs <!-- weekly --></p>
         <p class="card__previous-time">Previous - 5hrs <!-- weekly --></p>
       </article>
       
-      <article>
-        <header>
-          <h2>Social</h2>
-          <button type="button" aria-label="More Options">
-            <img src="./images/icon-ellipsis.svg" alt="">
+      <article class="card card--social">
+        <header class="card__header">
+          <h2 class="card__title">Social</h2>
+          <button type="button" aria-label="More Options" class="card__options">
+            <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
           </button>
         </header>
         <p class="card__time">5hrs <!-- weekly --></p>
         <p class="card__previous-time">Previous - 10hrs <!-- weekly --></p>
       </article>
       
-      <article>
-        <header>
-          <h2>Self Care</h2>
-          <button type="button" aria-label="More Options">
-            <img src="./images/icon-ellipsis.svg" alt="">
+      <article class="card card--self-care">
+        <header class="card__header">
+          <h2 class="card__title">Self Care</h2>
+          <button type="button" aria-label="More Options" class="card__options">
+            <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
           </button>
         </header>
         <p class="card__time">2hrs <!-- weekly --></p>
