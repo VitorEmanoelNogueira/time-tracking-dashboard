@@ -27,9 +27,13 @@
   <main class="l-dashboard">
 
     <header class="c-profile">
-      <img src="./images/image-jeremy.png" alt="Jeremy Robson" class="c-profile__picture"/>
-      <p class="c-profile__introduction">Report for</p>
-      <h1 class="c-profile__name">Jeremy Robson</h1>
+      <div class="c-profile__info">
+        <img src="./images/image-jeremy.png" alt="Jeremy Robson" class="c-profile__picture"/>
+        <div class="c-profile__text">
+          <p class="c-profile__introduction">Report for</p>
+          <h1 class="c-profile__name">Jeremy Robson</h1>
+        </div>
+      </div>
       <nav class="c-profile__nav">
         <button class="c-profile__timeframe" type="button" data-period="daily">Daily</button>
         <button class="c-profile__timeframe" type="button" data-period="weekly">Weekly</button>
@@ -46,8 +50,10 @@
             <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
           </button> 
         </header>
-        <p class="c-card__time">32hrs <!-- weekly --></p>
-        <p class="c-card__previous-time">Previous - 36hrs <!-- weekly --></p>
+        <div class="c-card__times">
+          <p class="c-card__time">32hrs <!-- weekly --></p>
+          <p class="c-card__previous-time">Previous - 36hrs <!-- weekly --></p>
+        </div>
       </article>
       
       <article class="c-card c-card--play">
@@ -57,8 +63,10 @@
             <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
           </button>
         </header>
-        <p class="c-card__time js-current-time">10hrs <!-- weekly --></p>
-        <p class="c-card__previous-time js-previous-time">Previous - 8hrs <!-- weekly --></p>
+        <div class="c-card__times">
+          <p class="c-card__time js-current-time">10hrs <!-- weekly --></p>
+          <p class="c-card__previous-time js-previous-time">Previous - 8hrs <!-- weekly --></p>
+        </div>
       </article>
       
       <article class="c-card c-card--study">
@@ -68,8 +76,10 @@
             <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
           </button>
         </header>
-        <p class="c-card__time js-current-time">4hrs <!-- weekly --></p>
-        <p class="c-card__previous-time js-previous-time">Previous - 7hrs <!-- weekly --></p>
+        <div class="c-card__times">
+          <p class="c-card__time js-current-time">4hrs <!-- weekly --></p>
+          <p class="c-card__previous-time js-previous-time">Previous - 7hrs <!-- weekly --></p>
+        </div>
       </article>
       
       <article class="c-card c-card--exercise">
@@ -79,8 +89,10 @@
             <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
           </button>
         </header>
-        <p class="c-card__time js-current-time">4hrs <!-- weekly --></p>
-        <p class="c-card__previous-time js-previous-time">Previous - 5hrs <!-- weekly --></p>
+        <div class="c-card__times">
+          <p class="c-card__time js-current-time">4hrs <!-- weekly --></p>
+          <p class="c-card__previous-time js-previous-time">Previous - 5hrs <!-- weekly --></p>
+        </div>
       </article>
       
       <article class="c-card c-card--social">
@@ -90,8 +102,10 @@
             <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
           </button>
         </header>
-        <p class="c-card__time js-current-time">5hrs <!-- weekly --></p>
-        <p class="c-card__previous-time js-previous-time">Previous - 10hrs <!-- weekly --></p>
+        <div class="c-card__times">
+          <p class="c-card__time js-current-time">5hrs <!-- weekly --></p>
+          <p class="c-card__previous-time js-previous-time">Previous - 10hrs <!-- weekly --></p>
+        </div>
       </article>
       
       <article class="c-card c-card--self-care">
@@ -101,8 +115,10 @@
             <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
           </button>
         </header>
-        <p class="c-card__time js-current-time">2hrs <!-- weekly --></p>
-        <p class="c-card__previous-time js-previous-time">Previous - 2hrs <!-- weekly --></p>
+        <div class="c-card__times">
+          <p class="c-card__time js-current-time">2hrs <!-- weekly --></p>
+          <p class="c-card__previous-time js-previous-time">Previous - 2hrs <!-- weekly --></p>
+        </div>
       </article>
     </section>
   </main>

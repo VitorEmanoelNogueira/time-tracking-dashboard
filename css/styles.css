@@ -34,6 +34,94 @@ body{
 
 /* Layout */
 
+.l-dashboard{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 4em 1.25em;
+    outline: 1px solid red;
+}
+
+.l-dashboard__cards{
+    outline: 1px solid orange;
+    width: 100%;
+}
+
 /* Components */
+
+.c-profile{
+    outline: 1px solid green;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+}
+
+.c-profile__info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 1rem;
+    outline: 1px solid blue;
+    padding: 1.5em;
+}
+
+.c-profile__picture{
+    width: 4rem;
+}
+
+.c-profile__text{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.c-profile__name{
+    font-size: 1.4rem;
+}
+
+.c-profile__nav{
+    width: 100%;
+    outline: 1px solid blue;
+    display: flex;
+    justify-content: space-around;
+    margin-block: 1em;
+}
+
+.c-profile__timeframe{
+    padding: 0.5em;
+    font-size: 1.125rem;
+    font-family: "Rubik", sans-serif;
+}
+
+.c-card{
+    outline: 1px solid purple;
+    margin-block-start: 1.5em;
+    display: flex;
+    flex-flow: column;
+    gap: 0.5em;
+    padding: 1em;
+}
+
+.c-card__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-card__title{
+    font-size: 1.125rem;
+}
+
+.c-card__times{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-card__time{
+    font-size: 2rem;
+}
 
 /* State */
