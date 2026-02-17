@@ -35,11 +35,13 @@ body{
 /* Layout */
 
 .l-dashboard{
+    max-width: 35rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    margin: 4em 1.25em;
+    margin: 4em auto;
+    padding-inline: 1.25rem;
     outline: 1px solid red;
 }
 
@@ -64,6 +66,7 @@ body{
     display: flex;
     flex-flow: row;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     outline: 1px solid blue;
     padding: 1.5em;
