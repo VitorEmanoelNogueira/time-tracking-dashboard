@@ -88,13 +88,16 @@ body{
     outline: 1px solid blue;
     display: flex;
     justify-content: space-around;
-    margin-block: 1em;
 }
 
 .c-profile__timeframe{
-    padding: 0.5em;
+    background: none;
+    border: none;
+    flex: 1;
+    padding-block: 1em;
     font-size: 1.125rem;
-    font-family: "Rubik", sans-serif;
+    font-family: inherit;
+    cursor: pointer;
 }
 
 .c-card{
