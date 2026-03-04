@@ -27,17 +27,17 @@
  
   <main class="l-dashboard">
 
-    <header class="c-profile">
+    <header class="c-profile u-bg-surface">
       <div class="c-profile__info">
         <img src="./images/image-jeremy.png" alt="Jeremy Robson" class="c-profile__picture"/>
         <div class="c-profile__text">
-          <p class="c-profile__introduction">Report for</p>
+          <p class="c-profile__introduction u-text-secondary">Report for</p>
           <h1 class="c-profile__name">Jeremy Robson</h1>
         </div>
       </div>
       <nav class="c-profile__nav">
         <button class="c-profile__timeframe" type="button" data-period="daily">Daily</button>
-        <button class="c-profile__timeframe" type="button" data-period="weekly">Weekly</button>
+        <button class="c-profile__timeframe is-active" type="button" data-period="weekly">Weekly</button>
         <button class="c-profile__timeframe" type="button" data-period="monthly">Monthly</button>
       </nav>
     </header>
@@ -45,80 +45,92 @@
     <section class="l-dashboard__cards">
 
       <article class="c-card c-card--work">
-        <header class="c-card__header">
-          <h2 class="c-card__title">Work</h2>
-          <button type="button" aria-label="More Options" class="c-card__options">
-            <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
-          </button> 
-        </header>
-        <div class="c-card__times">
-          <p class="c-card__time">32hrs <!-- weekly --></p>
-          <p class="c-card__previous-time">Previous - 36hrs <!-- weekly --></p>
+        <div class="c-card__inner u-bg-surface">
+          <header class="c-card__header">
+            <h2 class="c-card__title">Work</h2>
+            <button type="button" aria-label="More Options" class="c-card__options">
+              <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
+            </button>
+          </header>
+          <div class="c-card__times">
+            <p class="c-card__time">32hrs <!-- weekly --></p>
+            <p class="c-card__previous-time u-text-secondary">Previous - 36hrs <!-- weekly --></p>
+          </div>
         </div>
       </article>
       
       <article class="c-card c-card--play">
-        <header class="c-card__header">
-          <h2 class="c-card__title">Play</h2>
-          <button type="button" aria-label="More Options" class="c-card__options">
-            <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
-          </button>
-        </header>
-        <div class="c-card__times">
-          <p class="c-card__time js-current-time">10hrs <!-- weekly --></p>
-          <p class="c-card__previous-time js-previous-time">Previous - 8hrs <!-- weekly --></p>
+        <div class="c-card__inner u-bg-surface">
+          <header class="c-card__header">
+            <h2 class="c-card__title">Play</h2>
+            <button type="button" aria-label="More Options" class="c-card__options">
+              <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
+            </button>
+          </header>
+          <div class="c-card__times">
+            <p class="c-card__time js-current-time">10hrs <!-- weekly --></p>
+            <p class="c-card__previous-time u-text-secondary js-previous-time">Previous - 8hrs <!-- weekly --></p>
+          </div>
         </div>
       </article>
       
-      <article class="c-card c-card--study">
-        <header class="c-card__header">
-          <h2 class="c-card__title">Study</h2>
-          <button type="button" aria-label="More Options" class="c-card__options">
-            <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
-          </button>
-        </header>
-        <div class="c-card__times">
-          <p class="c-card__time js-current-time">4hrs <!-- weekly --></p>
-          <p class="c-card__previous-time js-previous-time">Previous - 7hrs <!-- weekly --></p>
+      <article class="c-card c-card--study ">
+        <div class="c-card__inner u-bg-surface">
+          <header class="c-card__header">
+            <h2 class="c-card__title">Study</h2>
+            <button type="button" aria-label="More Options" class="c-card__options">
+              <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
+            </button>
+          </header>
+          <div class="c-card__times">
+            <p class="c-card__time js-current-time">4hrs <!-- weekly --></p>
+            <p class="c-card__previous-time u-text-secondary js-previous-time">Previous - 7hrs <!-- weekly --></p>
+          </div>
         </div>
       </article>
       
       <article class="c-card c-card--exercise">
-        <header class="c-card__header">
-          <h2 class="c-card__title">Exercise</h2>
-          <button type="button" aria-label="More Options" class="c-card__options">
-            <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
-          </button>
-        </header>
-        <div class="c-card__times">
-          <p class="c-card__time js-current-time">4hrs <!-- weekly --></p>
-          <p class="c-card__previous-time js-previous-time">Previous - 5hrs <!-- weekly --></p>
+        <div class="c-card__inner u-bg-surface">
+          <header class="c-card__header">
+            <h2 class="c-card__title">Exercise</h2>
+            <button type="button" aria-label="More Options" class="c-card__options">
+              <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
+            </button>
+          </header>
+          <div class="c-card__times">
+            <p class="c-card__time js-current-time">4hrs <!-- weekly --></p>
+            <p class="c-card__previous-time u-text-secondary js-previous-time">Previous - 5hrs <!-- weekly --></p>
+          </div>
         </div>
       </article>
       
       <article class="c-card c-card--social">
-        <header class="c-card__header">
-          <h2 class="card__title">Social</h2>
-          <button type="button" aria-label="More Options" class="c-card__options">
-            <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
-          </button>
-        </header>
-        <div class="c-card__times">
-          <p class="c-card__time js-current-time">5hrs <!-- weekly --></p>
-          <p class="c-card__previous-time js-previous-time">Previous - 10hrs <!-- weekly --></p>
+        <div class="c-card__inner u-bg-surface">
+          <header class="c-card__header">
+            <h2 class="card__title">Social</h2>
+            <button type="button" aria-label="More Options" class="c-card__options">
+              <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
+            </button>
+          </header>
+          <div class="c-card__times">
+            <p class="c-card__time js-current-time">5hrs <!-- weekly --></p>
+            <p class="c-card__previous-time u-text-secondary js-previous-time">Previous - 10hrs <!-- weekly --></p>
+          </div>
         </div>
       </article>
       
       <article class="c-card c-card--self-care">
-        <header class="c-card__header">
-          <h2 class="c-card__title">Self Care</h2>
-          <button type="button" aria-label="More Options" class="c-card__options">
-            <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
-          </button>
-        </header>
-        <div class="c-card__times">
-          <p class="c-card__time js-current-time">2hrs <!-- weekly --></p>
-          <p class="c-card__previous-time js-previous-time">Previous - 2hrs <!-- weekly --></p>
+        <div class="c-card__inner u-bg-surface">
+          <header class="c-card__header">
+            <h2 class="c-card__title">Self Care</h2>
+            <button type="button" aria-label="More Options" class="c-card__options">
+              <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
+            </button>
+          </header>
+          <div class="c-card__times">
+            <p class="c-card__time js-current-time">2hrs <!-- weekly --></p>
+            <p class="c-card__previous-time u-text-secondary js-previous-time">Previous - 2hrs <!-- weekly --></p>
+          </div>
         </div>
       </article>
     </section>

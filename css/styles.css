@@ -17,7 +17,6 @@
 
     /* Weights */
     --w-300: 300;
-    --w-400: 400;
     --w-500: 500;
 }
 
@@ -29,7 +28,9 @@
 }
 
 body{
-    font: normal var(--w-400) 1rem/1.5 "Rubik", sans-serif;
+    font: normal 1rem/1.5 "Rubik", sans-serif;
+    background-color:var(--navy-950);
+    color: white;
 }
 
 /* Layout */
@@ -40,18 +41,15 @@ body{
     flex-flow: column nowrap;
     margin: 4em auto;
     padding-inline: 1.25rem;
-    outline: 1px solid red;
 }
 
 .l-dashboard__cards{
-    outline: 1px solid orange;
     width: 100%;
 }
 
 /* Components */
 
 .c-profile{
-    outline: 1px solid green;
     display: flex;
     flex-flow: column;
     width: 100%;
@@ -66,12 +64,16 @@ body{
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    outline: 1px solid blue;
-    padding: 1.5em;
+    padding: 1.875em;
+
+    background-color:var(--purple-600);
+    border-radius: 1rem;
 }
 
 .c-profile__picture{
-    width: 4rem;
+    width: 4.5rem;
+    border: solid white;
+    border-radius: 50%;
 }
 
 .c-profile__text{
@@ -81,32 +83,42 @@ body{
 
 .c-profile__name{
     font-size: 1.4rem;
+    font-weight: var(--w-300);
 }
 
 .c-profile__nav{
     width: 100%;
-    outline: 1px solid blue;
     display: flex;
     justify-content: space-around;
 }
 
 .c-profile__timeframe{
     background: none;
+    color: var(--purple-500);
     border: none;
     flex: 1;
-    padding-block: 1em;
-    font-size: 1.125rem;
+    padding-block: 1.3em;
+    font-size:1.125rem;
     font-family: inherit;
+}
+
+.c-profile__timeframe:hover{
     cursor: pointer;
+    color: white;
 }
 
 .c-card{
-    outline: 1px solid purple;
-    margin-block-start: 1.5em;
-    display: flex;
-    flex-flow: column;
-    gap: 0.5em;
-    padding: 1em;
+    margin-block-start: 1.5rem;
+    overflow:hidden;
+    background-repeat: no-repeat;
+    background-position: top right 1rem;
+    border-radius: 1rem;
+}
+
+.c-card__inner{
+    height: 100%;
+    padding: 1.5em;
+    margin-block-start: 2.5rem;
 }
 
 .c-card__header{
@@ -116,6 +128,12 @@ body{
 
 .c-card__title{
     font-size: 1.125rem;
+    font-weight: var(--w-500)
+}
+
+.c-card__options{
+    background-color: inherit;
+    border: none;
 }
 
 .c-card__times{
@@ -126,6 +144,61 @@ body{
 
 .c-card__time{
     font-size: 2rem;
+    font-weight: var(--w-300);
 }
 
+.c-card__previous-time{
+    font-weight: var(--w-300);
+}
+
+.c-card--work{
+    background-image: url(..//images/icon-work.svg);
+    background-color: var(--orange-300);
+}
+
+.c-card--work{
+    background-image: url(..//images/icon-work.svg);
+    background-color: var(--orange-300);
+}
+
+.c-card--play{
+    background-image: url(..//images/icon-play.svg);
+    background-color: var(--blue-300);
+}
+
+.c-card--study{
+    background-image: url(..//images/icon-study.svg);
+    background-color: var(--pink-400);
+}
+
+.c-card--exercise{
+    background-image: url(..//images/icon-exercise.svg);
+    background-color: var(--green-400);
+}
+
+.c-card--social{
+    background-image: url(..//images/icon-social.svg);
+    background-color: var(--purple-700);
+}
+
+.c-card--self-care{
+    background-image: url(..//images/icon-self-care.svg);
+    background-color: var(--yellow-300);
+}
+
+
 /* State */
+.is-active{
+    color: white;
+}
+
+/* Utilities */
+.u-bg-surface{
+    background-color:var(--navy-900);
+    border-radius: 1rem;
+}
+
+.u-text-secondary{
+    color: var(--navy-200);
+    font-size: 0.9rem;
+}
