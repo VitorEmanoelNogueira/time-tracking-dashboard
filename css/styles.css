@@ -111,7 +111,7 @@ body{
     margin-block-start: 1.5rem;
     overflow:hidden;
     background-repeat: no-repeat;
-    background-position: top right 1rem;
+    background-position: top -0.55rem right 1rem;
     border-radius: 1rem;
 }
 
@@ -124,6 +124,7 @@ body{
 .c-card__header{
     display: flex;
     justify-content: space-between;
+    gap: 5.5rem;
 }
 
 .c-card__title{
@@ -140,6 +141,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-block: 1em 0.5em;
 }
 
 .c-card__time{
@@ -156,14 +158,10 @@ body{
     background-color: var(--orange-300);
 }
 
-.c-card--work{
-    background-image: url(..//images/icon-work.svg);
-    background-color: var(--orange-300);
-}
-
 .c-card--play{
     background-image: url(..//images/icon-play.svg);
     background-color: var(--blue-300);
+    background-position-y: -0.2rem;
 }
 
 .c-card--study{
@@ -174,6 +172,7 @@ body{
 .c-card--exercise{
     background-image: url(..//images/icon-exercise.svg);
     background-color: var(--green-400);
+    background-position-y: 0;
 }
 
 .c-card--social{
