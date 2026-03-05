@@ -81,3 +81,11 @@
         font-size: 0.8rem;
     }
 }
+
+
+@media screen and (min-width: 110rem){
+    html{
+        font-size: 112.5%;
+    }
+}
+
