@@ -121,6 +121,11 @@ body{
     margin-block-start: 2.5rem;
 }
 
+.c-card__inner:hover:not(:has(.c-card__options:hover)){
+    background-color: hsl(236, 41%, 34%);
+    cursor: pointer;
+}
+
 .c-card__header{
     display: flex;
     justify-content: space-between;
@@ -135,6 +140,11 @@ body{
 .c-card__options{
     background-color: inherit;
     border: none;
+}
+
+.c-card__options:hover{
+    cursor: pointer;
+    filter: brightness(2);
 }
 
 .c-card__times{
