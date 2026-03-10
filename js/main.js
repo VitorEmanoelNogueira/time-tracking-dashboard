@@ -11,7 +11,7 @@ const cards = [...document.querySelectorAll('.c-card')].map((card) => {
 
 let json;
 
-fetch('../data.json').then((response) => {
+fetch('data.json').then((response) => {
     return response.json();
 }).then((data) => {
     json = data;
