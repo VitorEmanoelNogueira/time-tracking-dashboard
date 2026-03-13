@@ -2,9 +2,9 @@
 
     /* Layout */
     body{
-        min-height: 100vh;
         display: flex;
-        flex-direction: column;    }
+        flex-direction: column;    
+    }
 
     .l-dashboard{
         max-width: none;
