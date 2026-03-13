@@ -20,10 +20,13 @@ fetch('data.json').then((response) => {
 
 buttons.forEach(button => {
     button.addEventListener('click', () => {
-        if(button == activeButton) return;
+        if(button === activeButton) return;
 
         activeButton.classList.remove('is-active');
+        activeButton.setAttribute("aria-pressed", "false");
+        
         button.classList.add('is-active');
+        button.setAttribute("aria-pressed", "true");
         
         activeButton = button;
 
