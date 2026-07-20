@@ -23,7 +23,6 @@
 <body>
  
   <main class="l-dashboard">
-
     <header class="c-profile u-bg-surface">
       <div class="c-profile__info">
         <img src="./images/image-jeremy.png" alt="Jeremy Robson" class="c-profile__picture"/>
@@ -32,26 +31,28 @@
           <h1 class="c-profile__name">Jeremy Robson</h1>
         </div>
       </div>
-      <nav class="c-profile__nav">
+      <div class="c-profile__nav" role="group" aria-label="Select a timeframe">
         <button class="c-profile__timeframe" type="button" data-period="daily" aria-pressed="false">Daily</button>
         <button class="c-profile__timeframe is-active" type="button" data-period="weekly" aria-pressed="true">Weekly</button>
         <button class="c-profile__timeframe" type="button" data-period="monthly" aria-pressed="false">Monthly</button>
-      </nav>
+      </div>
     </header>
 
-    <section class="l-dashboard__cards">
+    <section class="l-dashboard__cards" aria-label="Time tracking dashboard">
+
+      <p id="dashboard-status" class="u-sr-only" aria-live="polite"></p>
 
       <article class="c-card c-card--work">
         <div class="c-card__inner u-bg-surface">
           <header class="c-card__header">
             <h2 class="c-card__title">Work</h2>
-            <button type="button" aria-label="More Options" class="c-card__options">
+            <button type="button" aria-label="More Options for Work" class="c-card__options">
               <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
             </button>
           </header>
           <div class="c-card__times">
-            <p class="c-card__time js-current-time">--hrs</p>
-            <p class="c-card__previous-time u-text-secondary js-previous-time">--</p>
+            <p class="c-card__time js-current-time"></p>
+            <p class="c-card__previous-time u-text-secondary js-previous-time"></p>
           </div>
         </div>
       </article>
@@ -60,13 +61,13 @@
         <div class="c-card__inner u-bg-surface">
           <header class="c-card__header">
             <h2 class="c-card__title">Play</h2>
-            <button type="button" aria-label="More Options" class="c-card__options">
+            <button type="button" aria-label="More Options for Play" class="c-card__options">
               <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
             </button>
           </header>
           <div class="c-card__times">
-            <p class="c-card__time js-current-time">--hrs</p>
-            <p class="c-card__previous-time u-text-secondary js-previous-time">--</p>
+            <p class="c-card__time js-current-time"></p>
+            <p class="c-card__previous-time u-text-secondary js-previous-time"></p>
           </div>
         </div>
       </article>
@@ -75,13 +76,13 @@
         <div class="c-card__inner u-bg-surface">
           <header class="c-card__header">
             <h2 class="c-card__title">Study</h2>
-            <button type="button" aria-label="More Options" class="c-card__options">
+            <button type="button" aria-label="More Options for Study" class="c-card__options">
               <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
             </button>
           </header>
           <div class="c-card__times">
-            <p class="c-card__time js-current-time">--hrs</p>
-            <p class="c-card__previous-time u-text-secondary js-previous-time">--</p>
+            <p class="c-card__time js-current-time"></p>
+            <p class="c-card__previous-time u-text-secondary js-previous-time"></p>
           </div>
         </div>
       </article>
@@ -90,13 +91,13 @@
         <div class="c-card__inner u-bg-surface">
           <header class="c-card__header">
             <h2 class="c-card__title">Exercise</h2>
-            <button type="button" aria-label="More Options" class="c-card__options">
+            <button type="button" aria-label="More Options for Exercise" class="c-card__options">
               <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
             </button>
           </header>
           <div class="c-card__times">
-            <p class="c-card__time js-current-time">--hrs</p>
-            <p class="c-card__previous-time u-text-secondary js-previous-time">--</p>
+            <p class="c-card__time js-current-time"></p>
+            <p class="c-card__previous-time u-text-secondary js-previous-time"></p>
           </div>
         </div>
       </article>
@@ -105,13 +106,13 @@
         <div class="c-card__inner u-bg-surface">
           <header class="c-card__header">
             <h2 class="c-card__title">Social</h2>
-            <button type="button" aria-label="More Options" class="c-card__options">
+            <button type="button" aria-label="More Options for Social" class="c-card__options">
               <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
             </button>
           </header>
           <div class="c-card__times">
-            <p class="c-card__time js-current-time">--hrs</p>
-            <p class="c-card__previous-time u-text-secondary js-previous-time">--</p>
+            <p class="c-card__time js-current-time"></p>
+            <p class="c-card__previous-time u-text-secondary js-previous-time"></p>
           </div>
         </div>
       </article>
@@ -120,13 +121,13 @@
         <div class="c-card__inner u-bg-surface">
           <header class="c-card__header">
             <h2 class="c-card__title">Self Care</h2>
-            <button type="button" aria-label="More Options" class="c-card__options">
+            <button type="button" aria-label="More Options for Self Care" class="c-card__options">
               <img src="./images/icon-ellipsis.svg" alt="" aria-hidden="true">
             </button>
           </header>
           <div class="c-card__times">
-            <p class="c-card__time js-current-time">--hrs</p>
-            <p class="c-card__previous-time u-text-secondary js-previous-time">--</p>
+            <p class="c-card__time js-current-time"></p>
+            <p class="c-card__previous-time u-text-secondary js-previous-time"></p>
           </div>
         </div>
       </article>
