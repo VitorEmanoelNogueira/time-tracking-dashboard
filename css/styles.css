@@ -12,8 +12,8 @@
     /* Neutral */
     --navy-950:  hsl(226, 43%, 10%);
     --navy-900: hsl(235, 46%, 20%);
-    --purple-500: hsl(235, 45%, 61%);
-    --navy-200: hsl(236, 100%, 87%);
+    --purple-500: hsl(235, 69%, 72%);
+    --navy-200: hsl(236, 73%, 93%);
 
     /* Weights */
     --w-300: 300;
@@ -197,7 +197,7 @@ body{
 }
 
 .attribution {text-align: center;}
-.attribution a { color: hsl(228, 45%, 44%);}
+.attribution a { color: hsl(228, 94%, 68%);}
 
 /* State */
 .is-active{
